@@ -4,35 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/white">
+    android:background="@color/white"
+    tools:context=".MainActivity">
 
     <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="64dp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="64dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/readian_logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_readian_logo"
             android:layout_gravity="center_horizontal"
-            android:contentDescription="@string/readian_logo" />
+            android:contentDescription="@string/readian_logo"
+            android:src="@drawable/ic_readian_logo" />
 
         <ImageView
             android:id="@+id/readian_logo_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_readian_logo_name"
-            android:layout_marginStart="14dp"
             android:layout_gravity="center_vertical"
+            android:layout_marginStart="14dp"
             android:contentDescription="@string/readian_logo"
-            />
+            android:src="@drawable/ic_readian_logo_name" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <ImageView
+        android:id="@+id/image_readian_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image_readian_welcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutCompat"
+        android:layout_marginTop="40dp"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

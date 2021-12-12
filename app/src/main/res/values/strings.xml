@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">LoginApp</string>
     <string name="readian_logo">Readian Logo</string>
+    <string name="log_in">Log In</string>
+    <string name="todo">TODO</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="skip">Skip</string>
 </resources>

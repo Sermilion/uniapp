@@ -1,12 +1,11 @@
-package io.readian.loginapp.wecome
+package io.readian.loginapp.login
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
 import io.readian.loginapp.R
 
 
-open class WelcomeLogin : AppCompatActivity() {
+open class LoginScreen : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginApp">
         <activity
-            android:name=".wecome.WelcomeLogin"
+            android:name="io.readian.loginapp.login.LoginScreen"
             android:exported="true" />
 
         <activity

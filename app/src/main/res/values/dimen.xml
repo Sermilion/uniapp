@@ -6,4 +6,5 @@
     <dimen name="display_h4_size">18sp</dimen>
     <dimen name="display_h5_size">16sp</dimen>
     <dimen name="display_h6_size">14sp</dimen>
+    <dimen name="display_h7_size">10sp</dimen>
 </resources>

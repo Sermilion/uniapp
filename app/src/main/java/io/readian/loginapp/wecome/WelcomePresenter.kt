@@ -1,16 +1,20 @@
 package io.readian.loginapp.wecome
 
-class WelcomePresenter: WelcomeContract.Presenter {
+import android.content.Intent
+import androidx.core.content.ContextCompat.startActivity
 
-  override fun onLoginClicked() {
+class WelcomePresenter : WelcomeContract.Presenter, WelcomeLogin(){
 
-  }
+    override fun onLoginClicked() {
+        val loginIntent = Intent(this, WelcomeLogin::class.java)
+        startActivity(loginIntent)
+    }
 
-  override fun onSignUpClicked() {
+    override fun onSignUpClicked() {
 
-  }
+    }
 
-  override fun onSkipClicked() {
+    override fun onSkipClicked() {
 
-  }
+    }
 }

@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginApp">
         <activity
+            android:name=".wecome.WelcomeLogin"
+            android:exported="true" />
+
+        <activity
             android:name=".wecome.WelcomeScreen"
             android:exported="true">
             <intent-filter>
@@ -18,6 +22,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

@@ -5,4 +5,16 @@
     <string name="todo">TODO</string>
     <string name="sign_up">Sign Up</string>
     <string name="skip">Skip</string>
+    <string name="readian_log">readian_log</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="or_log_in_with">or log in with</string>
+    <string name="by_singing_you_accept_the_terms_of_service_and_privacy_policy">By singing you accept the Terms of Service and Privacy Policy</string>
+    <string name="password">Password</string>
+    <string name="google">google</string>
+    <string name="facebook">facebook</string>
+    <string name="privacy">privacy</string>
+    <string name="welcome">welcome</string>
+    <string name="print_login">print_login</string>
 </resources>

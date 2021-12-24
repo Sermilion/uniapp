@@ -8,7 +8,9 @@ interface WelcomeContract {
 
   interface Presenter {
     fun onLoginClicked()
+
     fun onSignUpClicked()
+
     fun onSkipClicked()
   }
 }

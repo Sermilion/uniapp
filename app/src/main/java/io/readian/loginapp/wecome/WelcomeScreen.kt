@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import io.readian.loginapp.R
+import io.readian.loginapp.login.LoginScreen
 
 class WelcomeScreen : AppCompatActivity(), WelcomeContract.View {
 
@@ -23,7 +24,8 @@ class WelcomeScreen : AppCompatActivity(), WelcomeContract.View {
         skip = findViewById(R.id.button_skip)
 
         logIn.setOnClickListener {
-            presenter.onLoginClicked()
+            val loginIntent = Intent(this, LoginScreen::class.java)
+            startActivity(loginIntent)
         }
 
         signUp.setOnClickListener {

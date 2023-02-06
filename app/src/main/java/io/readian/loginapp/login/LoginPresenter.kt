@@ -1,17 +1,17 @@
 package io.readian.loginapp.login
 
 
-class LoginPresenter: LoginContract.Presenter{
+class LoginPresenter : LoginContract.Presenter {
 
-    override fun onLoginClicked() {
+  override fun onLoginClicked() {
 
-    }
+  }
 
-    override fun onGoogleClicked(){
+  override fun onGoogleClicked() {
 
-    }
+  }
 
-    override fun onFacebookClicked() {
+  override fun onFacebookClicked() {
 
-    }
+  }
 }

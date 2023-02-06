@@ -1,0 +1,14 @@
+version: 2.1
+
+workflows:
+  test-deploy:
+    jobs:
+      - test
+
+jobs:
+  test:
+    docker:
+      - image: circleci/android:api-30-node
+    steps:
+      - checkout
+      - run: git --version

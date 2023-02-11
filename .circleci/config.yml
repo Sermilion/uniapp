@@ -8,6 +8,16 @@ workflows:
     jobs:
       - test
       - release-build
+  scheduled-workflow:
+     triggers:
+       - schedule:
+           cron: "0 * * * *"
+           filters:
+             branches:
+               only:
+                 - master
+     jobs:
+       - release-build
 
 jobs:
   test:

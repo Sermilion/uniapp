@@ -1,9 +1,13 @@
 version: 2.1
 
+orbs:
+  android: circleci/android@2.1.2
+
 workflows:
   test-deploy:
     jobs:
       - test
+      - release-build
 
 jobs:
   test:
@@ -11,4 +15,20 @@ jobs:
       - image: circleci/android:api-30-node
     steps:
       - checkout
-      - run: git --version
+      - android/restore-gradle-cache
+      - run: ./gradlew androidDependencies
+      - run: ./gradlew lint test
+      - android/run-tests
+      - android/save-gradle-cache
+  release-build:
+    docker:
+      - image: circleci/android:api-30-node
+    steps:
+      - checkout
+      - android/restore-gradle-cache
+      - run:
+          name: Assemble release build
+          command: |
+            ./gradlew assembleRelease
+      - store_artifacts:
+          path: app/build/outputs/apk/release/app-release-unsigned.apk

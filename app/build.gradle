@@ -4,6 +4,7 @@ plugins {
 }
 
 android {
+    namespace 'io.readian.loginapp'
     compileSdk 33
 
     defaultConfig {
